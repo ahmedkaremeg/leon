@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="up"
+      class="group opacity-0 pointer-events-none fixed bottom-10 right-10 w-10 h-10 cursor-pointer border rounded-full flex items-center justify-center z-[10] bg-[var(--white)] hover:bg-[var(--primary-color)] transition-all duration-300"
+    >
+      <i
+        class="fa-solid fa-angles-up text-[20px] text-[var(--primary-color)] group-hover:text-[var(--white)] transition-all duration-300"
+      ></i>
+    </div>
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[40]"
+    ></div>
+    <header class="header relative">
+      <div
+        id="menuStick"
+        class="flex items-center justify-between py-4 px-4 bg-[var(--white)] w-full z-[4] transition-transform duration-500 ease-in-out fixed top-0 left-0 right-0"
+      >
+        <img src="Logo.png" alt="Logo" />
+        <i
+          id="open"
+          class="fa fa-bars cursor-pointer hover:text-[var(--primary-color)]"
+        ></i>
+      </div>
+      <nav
+        id="menu"
+        class="menu-hidden text-left pl-[62px] pt-[33px] transition-all duration-300 text-[var(--white)] flex flex-col w-[545px] h-screen z-[50] bg-[var(--secondary-color)] top-0 fixed"
+      >
+        <i
+          id="close"
+          class="fa-solid fa-xmark text-[20px] hover:text-[var(--primary-color)] cursor-pointer w-fit m-0 pb-[28px] inline-block"
+        ></i>
+        <span
+          class="text-[21px] m-[0px] text-[var(--secondary-light)] pb-[20px]"
+          >Menu</span
+        >
+        <ul class="nav-links pb-[29px]">
+          <li>
+            <a
+              href="#home"
+              class="text-[29px] hover:text-[var(--primary-color)]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-[29px] hover:text-[var(--primary-color)]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="text-[29px] hover:text-[var(--primary-color)]"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-[29px] hover:text-[var(--primary-color)]"
+              >About</a
+            >
+          </li>
+        </ul>
+        <span
+          class="text-[21px] m-[0px] py-[20px] text-[var(--secondary-light)]"
+          >Get in Touch</span
+        >
+        <ul>
+          <li>
+            <a
+              href="#contact"
+              class="text-[21px] hover:text-[var(--primary-color)]"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+        <span
+          class="text-[21px] m-[0px] py-[20px] text-[var(--secondary-light)]"
+          >Get Social</span
+        >
+        <ul>
+          <li>
+            <a
+              href="#contact"
+              target="_blank"
+              class="text-[21px] hover:text-[var(--primary-color)]"
+              >Behance</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              target="_blank"
+              class="text-[21px] hover:text-[var(--primary-color)]"
+              >instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              target="_blank"
+              class="text-[21px] hover:text-[var(--primary-color)]"
+              >linkedin</a
+            >
+          </li>
+        </ul>
+        <span
+          class="text-[14.55px] m-[0px] text-[var(--secondary-light)] absolute bottom-[59px]"
+          >&copy; Ahmed Karem 2026
+        </span>
+      </nav>
+    </header>
+    <section
+      id="home"
+      class="hero w-full pt-[50px] bg-[var(--lighting-dark)] h-[460px]"
+    >
+      <button id="colorButton" class="w-[100px]">click</button>
+      <div class="flex items-center gap-x-2 text-center flex-col pt-[50px]">
+        <h1
+          class="text-3xl font-bold text-[var(--primary-color)] text-[55.43px] w-[299px]] pb-[61px]"
+        >
+          Hello There!
+        </h1>
+        <span
+          class="w-[357px] h-[50px] text-[20px] leading-[32pt] font-regular text-[var(--secondary-color)]"
+          >We are Leon - Super Creative & Minimal Agency Web Template</span
+        >
+      </div>
+    </section>
+    <section class="container tell-us pt-[86px]">
+      <div
+        class="flex items-center justify-between max-md:flex-col gap-y-[50px]"
+      >
+        <div class="flex flex-1 flex-col items-center text-center">
+          <i
+            class="fa-regular fa-lightbulb text-[70px] pb-[35px] text-[var(--primary-color)]"
+          ></i>
+          <span class="text-[20px] pb-[35px] font-bold text-[var(--text-color)]"
+            >Tell Us Your Idea</span
+          >
+          <p
+            class="text-[15px] max-w-[273px] text-[var(--secondary-color)] font-regular leading-[32px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            beatae obcaecati illum minima officia.
+          </p>
+        </div>
+        <div
+          class="flex flex-1 max-md:shadow-[0px_0px_0px_rgba(0,0,0,0)] shadow-[1px_8px_5px_rgba(0,0,0,0.1)] flex-col items-center text-center"
+        >
+          <i
+            class="fa-solid fa-flask text-[70px] pb-[35px] text-[var(--primary-color)]"
+          ></i>
+          <span class="text-[20px] pb-[35px] font-bold text-[var(--text-color)]"
+            >Tell Us Your Idea</span
+          >
+          <p
+            class="text-[15px] max-w-[273px] text-[var(--secondary-color)] font-regular leading-[32px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            beatae obcaecati illum minima officia.
+          </p>
+        </div>
+        <div class="flex flex-1 flex-col items-center text-center">
+          <i
+            class="fa-regular fa-lightbulb text-[70px] pb-[35px] text-[var(--primary-color)]"
+          ></i>
+          <span class="text-[20px] pb-[35px] font-bold text-[var(--text-color)]"
+            >Tell Us Your Idea</span
+          >
+          <p
+            class="text-[15px] max-w-[273px] text-[var(--secondary-color)] font-regular leading-[32px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            beatae obcaecati illum minima officia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="services"
+      class="services container text-left pb-[159px] max-md:pb-[70px] max-md:pt-[70px]"
+    >
+      <div
+        class="hidden max-md:block border-[var(--primary-color)] border-b-2 mx-[70px]"
+      ></div>
+      <div class="text-center relative">
+        <span
+          class="text-[161.87px] max-md:text-[80px] font-bold text-[var(--secondary-color)] opacity-5"
+          >services</span
+        >
+        <span
+          class="text-[var(--text-color)] max-md:text-[15px] text-[25px] absolute font-regular text-center flex items-center justify-center w-full left-0 -translate-y-[250%] max-md:-translate-y-[200%]"
+          >Don't be busy, be productive!</span
+        >
+      </div>
+      <div
+        class="flex overflow-hidden max-md:pl-[0px] max-sm:pl-[0px] items-center justify-between max-lg:flex-col max-sm:flex-col pt-[40px] gap-x-[48px]"
+      >
+        <div
+          class="flex flex-col max-lg:flex-row max-sm:flex-col flex-1 max-md:gap-y-[50px]"
+        >
+          <div class="flex relative">
+            <div>
+              <i
+                class="fa-regular fa-lightbulb text-[38px] text-[var(--primary-color)] pr-[25px]"
+              ></i>
+            </div>
+            <div>
+              <span class="text-[20px] text-[var(--text-color)] font-bold"
+                >Graphic Designer</span
+              >
+              <p class="text-[var(--secondary-color)] max-w-[273px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                harum at. Ea doloribus ipsum voluptas, non adipisci a, rem odit
+                ipsa consectetur magnam eum cum eaque molestias. Fugit, ipsum
+                error!
+              </p>
+            </div>
+          </div>
+          <div class="flex relative max-md:pb-[50px]">
+            <div class="flex flex-row">
+              <i
+                class="fa-regular fa-lightbulb text-[38px] text-[var(--primary-color)] pr-[25px]"
+              ></i>
+            </div>
+            <div>
+              <span class="text-[20px] text-[var(--text-color)] font-bold block"
+                >UI & UX</span
+              >
+              <p class="text-[var(--secondary-color)] max-w-[273px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                harum at. Ea doloribus ipsum voluptas, non adipisci a, rem odit
+                ipsa consectetur magnam eum cum eaque molestias. Fugit, ipsum
+                error!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-1 max-lg:flex-row max-sm:flex-col max-md:gap-y-[50px]"
+        >
+          <div class="flex relative">
+            <div class="flex flex-row">
+              <i
+                class="fa-regular fa-lightbulb text-[38px] text-[var(--primary-color)] pr-[25px]"
+              ></i>
+            </div>
+            <div>
+              <span class="text-[20px] text-[var(--text-color)] font-bold block"
+                >Web Design</span
+              >
+              <p class="text-[var(--secondary-color)] max-w-[273px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                harum at. Ea doloribus ipsum voluptas, non adipisci a, rem odit
+                ipsa consectetur magnam eum cum eaque molestias. Fugit, ipsum
+                error!
+              </p>
+            </div>
+          </div>
+          <div class="flex relative max-md:pb-[50px]">
+            <div class="flex flex-row">
+              <i
+                class="fa-solid fa-arrow-pointer text-[38px] text-[var(--primary-color)] pr-[25px]"
+              ></i>
+            </div>
+            <div>
+              <span class="text-[20px] text-[var(--text-color)] font-bold block"
+                >Web Development</span
+              >
+              <p class="text-[var(--secondary-color)] max-w-[273px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                harum at. Ea doloribus ipsum voluptas, non adipisci a, rem odit
+                ipsa consectetur magnam eum cum eaque molestias. Fugit, ipsum
+                error!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-1 max-lg:pt-[70px]">
+          <span
+            class="w-[313px] image-1 h-[343px] bg-[var(--secondary-color)] bg-cover relative after:content-[''] after:block after:absolute after:w-[102px] after:h-[436px] after:bg-[var(--primary-color)] after:translate-x-[250px] after:translate-y-[-45px] after:z-[-1]"
+          ></span>
+        </div>
+      </div>
+    </section>
+    <section
+      id="portfolio"
+      class="portfolio w-full relative text-left bg-[var(--lighting-dark)]"
+    >
+      <span
+        class="text-[161.87px] font-bold max-md:text-[80px] text-[var(--secondary-color)] opacity-5 text-center block"
+        >portfolio</span
+      >
+      <span
+        class="text-[var(--text-color)] max-md:text-[15px] text-[25px] absolute font-regular text-center flex items-center justify-center w-full left-0 -translate-y-[250%] max-md:-translate-y-[200%]"
+        >Don't be busy, be productive!</span
+      >
+      <div
+        class="flex container items-center gap-x-[19.5px] max-md:px-[60px] justify-between max-md:flex-col gap-y-[47.33px] pb-[170px] pt-[78px]"
+      >
+        <div class="flex-1">
+          <img
+            src="./Image_fx (4).png"
+            alt="project"
+            class="object-cover w-[501px] h-[371px]"
+          />
+          <div class="bg-[var(--white)] p-[30px] text-left">
+            <span class="text-[20px] text-[var(--text-color)] font-bold"
+              >Project Here</span
+            >
+            <p
+              class="text-[15px] text-[var(--secondary-color)] font-regular max-w-[393.38px]"
+            >
+              My creation ability is very difficut to mesaure because it can
+              manifest in unexpected ways.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img
+            src="./Image_fx (4).png"
+            alt="project"
+            class="object-cover w-[501px] h-[371px]"
+          />
+          <div class="bg-[var(--white)] p-[30px] text-left">
+            <span class="text-[20px] text-[var(--text-color)] font-bold"
+              >Project Here</span
+            >
+            <p
+              class="text-[15px] text-[var(--secondary-color)] font-regular max-w-[393.38px]"
+            >
+              My creation ability is very difficut to mesaure because it can
+              manifest in unexpected ways.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img
+            src="./Image_fx (4).png"
+            alt="project"
+            class="object-cover w-[501px] h-[371px]"
+          />
+          <div class="bg-[var(--white)] p-[30px] text-left">
+            <span class="text-[20px] text-[var(--text-color)] font-bold"
+              >Project Here</span
+            >
+            <p
+              class="text-[15px] text-[var(--secondary-color)] font-regular max-w-[393.38px]"
+            >
+              My creation ability is very difficut to mesaure because it can
+              manifest in unexpected ways.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about relative text-left pb-[133px] pt-[10px]">
+      <span
+        class="text-[161.87px] max-md:text-[80px] font-bold text-[var(--secondary-color)] opacity-5 text-center block"
+        >about</span
+      >
+      <span
+        class="text-[var(--text-color)] max-md:text-[15px] text-[25px] absolute font-regular text-center flex items-center justify-center w-full left-0 -translate-y-[250%] max-md:-translate-y-[200%]"
+        >Don't be busy, be productive!</span
+      >
+      <div class="flex container max-md:flex-col gap-x-[40px] gap-y-[50px]">
+        <div class="flex-1">
+          <img
+            src="./Image_fx (4).png"
+            alt=""
+            class="max-w-[313px] max-h-[343px]"
+          />
+        </div>
+        <div class="flex-1 max-md:px-[60px]">
+          <p
+            class="font-bold max-w-[556.4px] border-[var(--primary-color)] border-b-2 pb-[55px]"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            voluptatibus doloremque harum, quae aut in velit praesentium est
+            numquam nihil architecto cupiditate, quis repellat, sapiente
+            doloribus nam excepturi. Ipsam, perferendis!
+          </p>
+
+          <p class="max-w-[556.4px] text-[var(--secondary-color)] pt-[25px]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            accusamus corporis. Laboriosam voluptatum consequatur magnam quo
+            libero veritatis molestiae quidem! Nam aperiam repellat
+            reprehenderit quam porro consequatur, accusamus rem nisi.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="contact w-full relative text-left bg-[var(--lighting-dark)] pt-[10px] pb-[165px]"
+    >
+      <span
+        class="text-[161.87px] font-bold max-md:text-[80px] text-[var(--secondary-color)] opacity-5 text-center block"
+        >contact</span
+      >
+      <span
+        class="text-[var(--text-color)] max-md:text-[15px] text-[25px] absolute font-regular text-center flex items-center justify-center w-full left-0 -translate-y-[250%] max-md:-translate-y-[200%]"
+        >We are born to create</span
+      >
+      <div class="flex">
+        <div class="flex-1 pl-[181px] max-md:pl-[70px]">
+          <div
+            class="container flex flex-col items-start justify-start pt-[50px]"
+          >
+            <span
+              class="text-[var(--secondary-color)] text-left font-extrabold text-[55.43px] max-md:text-[20px]"
+              >Feel free to drop us a line at:</span
+            >
+            <a href="mailto:ahmedkaremofficial@gmail.com">
+              <span
+                class="text-[var(--primary-color)] max-md:text-[20px] font-extrabold text-[50px] hover:text-[var(--secondary-color)] transition-all duration-300 cursor-pointer"
+                >info@company.com</span
+              ></a
+            >
+            <div class="flex gap-x-[28px] items-center pt-[50px]">
+              <span
+                class="text-[var(--text-color)] font-regular text-[15px] max-md:pr-[10px] pr-[47px] max-md:text-[10px]"
+                >Find us on socialmedia:</span
+              >
+              <a href="https://www.facebook.com/ahmedkaremeg/" target="_blank">
+                <i
+                  class="fa-brands fa-facebook-f text-[var(--secondary-color)] max-md:text-[20px] text-[22px] hover:text-[var(--primary-color)] transition-all duration-300 cursor-pointer"
+                >
+                </i
+              ></a>
+              <a href="https://www.instagram.com/ahmedkaremeg/" target="_blank">
+                <i
+                  class="fa-brands fa-instagram text-[var(--secondary-color)] max-md:text-[20px] text-[22px] hover:text-[var(--primary-color)] transition-all duration-300 cursor-pointer"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ahmedkaremeg/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin text-[var(--secondary-color)] max-md:text-[20px] text-[22px] hover:text-[var(--primary-color)] transition-all duration-300 cursor-pointer"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1"></div>
+      </div>
+    </section>
+    <footer class="h-[100px] bg-[var(--secondary-color)] w-full">
+      <div class="container flex items-center justify-center h-full font-bold">
+        <p class="text-[var(--white)] text-[15px] text-center">
+          &copy; 2026
+          <a
+            href="https://about.me/ahmedkaremeg"
+            target="_blank"
+            class="text-[var(--primary-color)] border-b-2 border-transparent hover:border-[var(--primary-color)] transition-all duration-300"
+            >Ahmed Karem</a
+          >
+          ,All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

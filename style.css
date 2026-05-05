@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  direction: ltr;
+}
+:root {
+  --primary-color: #10cab7;
+  --secondary-color: #2c4755;
+  --secondary-light: #637988;
+  --text-color: #1f2021;
+  --lighting-dark: #eee;
+  --white: #fff;
+}
+body {
+  background-color: var(--white);
+}
+
+.image-1 {
+  background-image: url("./Image_fx\ \(4\).png");
+}
+
+.menu-hidden {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+#up:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#menuStick {
+  transition: transform 0.3s ease;
+}
+
+#menuStick-hidden {
+  transform: translateY(-100%);
+}
