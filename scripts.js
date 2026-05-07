@@ -26,10 +26,8 @@ let upButton = document.getElementById("up");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 300) {
     upButton.classList.remove("opacity-0", "pointer-events-none");
-    menuStick.classList.add("fixed");
   } else {
     upButton.classList.add("opacity-0", "pointer-events-none");
-    menuStick.classList.remove("fixed");
   }
 });
 
@@ -40,32 +38,3 @@ upButton.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-
-//menu scroll
-
-let header = document.querySelector("menuStick");
-let lastScroll = 0;
-
-window.addEventListener("scroll", function () {
-  let currentScroll = window.scrollY;
-
-  if (currentScroll > lastScroll && currentScroll > 100) {
-    // بيسكرول تحت = هيد يختفي
-    header.classList.add("header-hidden");
-    header.classList.remove("bg-[var(--white)]");
-  } else {
-    // بيسكرول فوق = هيد يرجع
-    header.classList.remove("header-hidden");
-    header.classList.add("bg-[var(--primary-color)]");
-  }
-
-  lastScroll = currentScroll;
-});
-
-let colorButton = document.getElementById("colorButton");
-
-colrButton.addEventListener("click", function () {
-  document.documentElement.style.setProperty("--primary-color", "#ff0000");
-});
-
-//
